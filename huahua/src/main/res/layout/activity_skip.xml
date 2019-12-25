@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -16,10 +14,11 @@
         android:max="100"
         android:progressDrawable="@drawable/m_progress_horizontal" />
 
-    <Button
-        android:id="@+id/bt"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/progressBar"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
